@@ -1,4 +1,4 @@
-import banner from '../assets/images/banner.jpg'
+import banner from '@/assets/images/banner.jpg'
 function Banner() {
     return (
         <section className="nr-banner bg-cover bg-center h-[100vh] pt-[168px] before:absolute before:content before:h-[100%] before:w-[100%] before:bg-[rgba(0,0,0,0.1)] before:left-0 before:top-0" style={{ backgroundImage: `url(${banner})` }}>
