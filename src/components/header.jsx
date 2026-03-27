@@ -1,4 +1,4 @@
-import Logo from '../assets/images/Solara_logo_1.webp';
+import Logo from '../assets/images/Solara_logo_1-CPsrmKwj.webp';
 function Header () {
     return (
         <header className="nr-header bg-black py-[10px] absolute w-[100%] bg-transparent z-10">
