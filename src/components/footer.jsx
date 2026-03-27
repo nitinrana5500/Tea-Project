@@ -1,4 +1,4 @@
-import Logo from '../assets/images/Solara_logo_1-CPsrmKwj.webp';
+import Logo from '../../public/images/Solara_logo_1.webp';
 function Footer () {
     return(
         <footer className="bg-[#b8b8b8] py-[50px]">
