@@ -1,4 +1,5 @@
 import Logo from '@/assets/Images/Solara_logo_1.webp';
+import { Link } from 'react-router-dom';
 function Header () {
     return (
         <header className="nr-header bg-black py-[10px] absolute w-[100%] bg-transparent z-10">
@@ -15,9 +16,7 @@ function Header () {
                             <li className='nr-nav-item'>
                                 <a href="" className='nr-item-inner uppercase text-[14px] text-white'>Cacao</a>
                             </li>
-                            <li className='nr-nav-item'>
-                                <a href="" className='nr-item-inner uppercase text-[14px] text-white'>Rituals</a>
-                            </li>
+                            <li className='nr-nav-item uppercase text-[14px] text-white'>Rituals</li>
                             <li className='nr-nav-item'>
                                 <a href="" className='nr-item-inner uppercase text-[14px] text-white'>Learn</a>
                             </li>
