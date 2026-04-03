@@ -1,33 +1,34 @@
 import Logo from '@/assets/Images/Solara_logo_1.webp';
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 function Header () {
+    const navigate = useNavigate();
     return (
         <header className="nr-header bg-black py-[10px] absolute w-[100%] bg-transparent z-10">
             <div className="nr-container">
                 <div className="nr-header-flx-wr flex items-center flex-col gap-[20px]">
                     <div className="nr-header-logo-wr">
-                        <img className='h-[100%] w-[100%] max-h-[50px] object-contain' src={Logo} alt="Vite logo" width="32" height="32" />
+                        <img className='h-[100%] w-[100%] max-h-[50px] object-contain cursor-pointer' src={Logo} alt="Vite logo" width="32" height="32" onClick={() => navigate("/")} />
                     </div>
                     <div className="nr-header-nav">
                         <ul className='nr-nav-inner flex items-center gap-[20px] justify-center'>
                             <li className='nr-nav-item'>
-                                <a href="" className='nr-item-inner uppercase text-[14px] text-white'>About</a>
+                                <button className='nr-item-inner uppercase text-[14px] text-white cursor-pointer'>About</button>
                             </li>
                             <li className='nr-nav-item'>
-                                <a href="" className='nr-item-inner uppercase text-[14px] text-white'>Cacao</a>
+                                <button className='nr-item-inner uppercase text-[14px] text-white cursor-pointer'>Cacao</button>
                             </li>
-                            <li className='nr-nav-item uppercase text-[14px] text-white'>Rituals</li>
+                            <li className='nr-nav-item uppercase text-[14px] text-white cursor-pointer' onClick={() => navigate("pages/rituals")}>Rituals</li>
                             <li className='nr-nav-item'>
-                                <a href="" className='nr-item-inner uppercase text-[14px] text-white'>Learn</a>
-                            </li>
-                            <li className='nr-nav-item'>
-                                <a href="" className='nr-item-inner uppercase text-[14px] text-white'>Origin</a>
+                                <button className='nr-item-inner uppercase text-[14px] text-white cursor-pointer'>Learn</button>
                             </li>
                             <li className='nr-nav-item'>
-                                <a href="" className='nr-item-inner uppercase text-[14px] text-white'>Recipes</a>
+                                <button className='nr-item-inner uppercase text-[14px] text-white cursor-pointer'>Origin</button>
                             </li>
                             <li className='nr-nav-item'>
-                                <a href="" className='nr-item-inner uppercase text-[14px] text-white'>Contact</a>
+                                <button className='nr-item-inner uppercase text-[14px] text-white cursor-pointer'>Recipes</button>
+                            </li>
+                            <li className='nr-nav-item'>
+                                <button className='nr-item-inner uppercase text-[14px] text-white cursor-pointer'>Contact</button>
                             </li>
                         </ul>
                     </div>
