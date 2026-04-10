@@ -4,10 +4,16 @@ import Icon2 from '../assets/Images/icons-2.png';
 import Icon3 from '../assets/Images/icons-3.png';
 import Icon4 from '../assets/Images/icons-4.png';
 import Videobanner from '../components/video-banner'; 
+import banner from '@/assets/Images/banner.jpg'
 function Home () {
     return (
         <>
-            <Banner/>
+            <Banner
+                Heading="Your new ritual"
+                Description="Solara ceremonial cacao revives ancient benefits to support your body, clear your mind, and make space for what matters."
+                buttonText="Start your rituals"
+                bannerImg={banner}
+            />
             <section className="nr-rich-text py-[70px] bg-[#e4e2e2]">
                 <div className="nr-container w-[100%] max-w-[1600px] px-[50px] h-[100%] m-auto">
                     <div className="nr-rich-flx-wr flex flex-col w-[100%] max-w-[700px] m-auto">

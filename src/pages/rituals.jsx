@@ -1,9 +1,15 @@
+import Banner from '@/components/banner';
+import banner from '@/assets/Images/banner.jpg'
 function Rituals() {
     return (
         <>
-            <div className="pt-[168px]">
-                <h2>hello</h2>
-            </div>
+            <Banner 
+                Heading="Your new ritual"
+                Description="Solara ceremonial cacao revives ancient benefits to support your body, clear your mind, and make space for what matters."
+                buttonText="Start your rituals"
+                align="center"
+                bannerImg={banner}
+            />
         </>
     )
 };
